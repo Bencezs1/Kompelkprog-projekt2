@@ -1,30 +1,32 @@
 function check(){
-    var a = document.pontozo.Haloi.value;
-    var b = document.pontozo.Progi.value;
-    var c = document.pontozo.Webi.value;
-    var d = document.pontozo.Halo.value;
-    var e = document.pontozo.Prog.value;
-    var f = document.pontozo.Web.value,
-    var ossz = a + b + c + d + e + f;
+    var a = Number(document.getElementById('haloi').value);
+    var b = Number(document.getElementById('progi').value);
+    var c = Number(document.getElementById('webi').value);
+    var d = Number(document.getElementById('halo').value);
+    var e = Number(document.getElementById('prog').value);
+    var f = Number(document.getElementById('web').value);
+    var ossz = document.getElementById('eredmeny').innerHTML = a+b+c+d+e+f;
+    return false;
+
 
     var pont;
     if (ossz>=168) {
-        pont = 5
+        pont = 5;
     }
-    else if (ossz>=126) {
+    if (ossz>=126) {
         pont = 4;
     }
-    else if (ossz>=84) {
+    if (ossz>=84) {
         pont = 3;
     }
-    else if (ossz>=52) {
+    if (ossz>=52) {
         pont = 2;
     }
-   else {
-       pomt = 1;
+    if (ossz<52) {
+       pont = 1;
    }
 
-    document.getElementById("kuldes").style.visibility = "visible";
-   document.getElementById("mennyi").innerHTML = ossz;
+   document.getElementById("mennyi").innerHTML = pont;
+
 
 }

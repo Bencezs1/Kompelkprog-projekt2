@@ -43,23 +43,23 @@
       <div class="col-md-5 lap">
       <form id="pontozo" name="pontozo">
         <p>Írásbeli</p>
-        <p class="i">Hálózat: 40 pont</p> <input type="number" name="Haloi">
-        <p class="i">Programozás: 40 pont</p> <input type="number" name="Progi" >
-        <p class="i">Weboldal és adatbázis: 40 pont</p> <input type="number" name="Webi">
+        <p class="i">Hálózat: 40 pont</p> <input type="text" id="haloi" name="haloi">
+        <p class="i">Programozás: 40 pont</p> <input type="text" id="progi" name="progi" >
+        <p class="i">Weboldal és adatbázis: 40 pont</p> <input type="text" id="webi" name="webi">
         <br><br>
         <p>Összesen: 120 pont</p>
         <br><br>
         <p>Szóbeli</p>
-        <p class="i">Hálózat: 30 pont</p> <input type="number" name="Halo">
-        <p class="i">Programozás: 30 pont</p> <input type="number" name="Prog">
-        <p class="i">Weboldal és adatbázis: 30 pont</p> <input type="number" name="Web">
+        <p class="i">Hálózat: 30 pont</p> <input type="text" id="halo" name="halo">
+        <p class="i">Programozás: 30 pont</p> <input type="text" id="prog" name="prog">
+        <p class="i">Weboldal és adatbázis: 30 pont</p> <input type="text" id="web" name="web">
         <br><br>
         <p>Összesen: 90 pont</p>
         <input id="button" type="button" value="Számol" onclick="check()">
       </form>
-      <div id="kuldes">
-        <p id="uzenet"></p>
-        <p id="mennyi"></p>
+      <p>Elért pontszám:</p>
+      <p id="eredmeny"></p>
+      <p id="mennyi"></p>
       </div>
   </div>
 
