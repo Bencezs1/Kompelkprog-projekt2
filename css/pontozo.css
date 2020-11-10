@@ -1,0 +1,13 @@
+body{
+    font-size: 22px;
+    padding: 15px;
+    background-color: antiquewhite;
+}
+
+.i{
+    margin: 20pt;
+}
+
+.lap{
+    display: inline-block;
+}

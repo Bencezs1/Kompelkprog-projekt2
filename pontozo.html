@@ -37,12 +37,40 @@
     </div>
   </nav>
 
+  <div class="container">
+    <h1>Pontozólap</h1>
+    <h1>Pontozólap</h1>
+      <div class="col-md-5 lap">
+      <form id="pontozo" name="pontozo">
+        <p>Írásbeli</p>
+        <p class="i">Hálózat: 40 pont</p> <input type="text" name="Haloi">
+        <p class="i">Programozás: 40 pont</p> <input type="text" name="Progi" >
+        <p class="i">Weboldal és adatbázis: 40 pont</p> <input type="text" name="Webi">
+        <br><br>
+        <p>Összesen: 120 pont</p>
+        <br><br>
+        <p>Szóbeli</p>
+        <p class="i">Hálózat: 30 pont</p> <input type="text" name="Halo">
+        <p class="i">Programozás: 30 pont</p> <input type="text" name="Prog">
+        <p class="i">Weboldal és adatbázis: 30 pont</p> <input type="text" name="Web">
+        <br><br>
+        <p>Összesen: 90 pont</p>
+        <input id="button" type="button" value="Számol" onclick="check()">
+      </form>
+      <div id="kuldes">
+        <p id="uzenet"></p>
+        <p id="mennyi"></p>
+      </div>
+    </div>
+  </div>
+
   <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Készítette: Zsibók Bence</p>
     </div>
   </footer>
 
+  <script src="pontozo.js"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
