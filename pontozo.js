@@ -2,31 +2,34 @@ function check(){
     var a = Number(document.getElementById('haloi').value);
     var b = Number(document.getElementById('progi').value);
     var c = Number(document.getElementById('webi').value);
-    var d = Number(document.getElementById('halo').value);
-    var e = Number(document.getElementById('prog').value);
-    var f = Number(document.getElementById('web').value);
-    var ossz = document.getElementById('eredmeny').innerHTML = a+b+c+d+e+f;
-    return false;
+    var d = Number(document.getElementById('szo').value);
+    var ossz = document.getElementById('eredmeny').innerHTML = a+b+c+d;
+    var pont = 0;
 
 
-    var pont;
-    if (ossz>=168) {
+    if (ossz>=120) {
         pont = 5;
     }
-    if (ossz>=126) {
+    if (ossz>=90) {
         pont = 4;
     }
-    if (ossz>=84) {
+    if (ossz>=60) {
         pont = 3;
     }
-    if (ossz>=52) {
+    if (ossz>=38) {
         pont = 2;
     }
-    if (ossz<52) {
+    if (ossz<38) {
        pont = 1;
    }
 
-   document.getElementById("mennyi").innerHTML = pont;
+    var ja = Number(document.getElementById('mennyi').innerHTML = pont);
+    return false;
 
 
+}
+
+function newFunction() {
+    var pont;
+    return pont;
 }
