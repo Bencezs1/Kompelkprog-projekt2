@@ -28,8 +28,3 @@ function check(){
 
 
 }
-
-function newFunction() {
-    var pont;
-    return pont;
-}
