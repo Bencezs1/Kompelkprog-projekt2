@@ -10,16 +10,16 @@ function check(){
     if (ossz>=120) {
         pont = 5;
     }
-    if (ossz>=90) {
+    else if (ossz>=90) {
         pont = 4;
     }
-    if (ossz>=60) {
+    else if (ossz>=60) {
         pont = 3;
     }
-    if (ossz>=38) {
+    else if (ossz>=38) {
         pont = 2;
     }
-    if (ossz<38) {
+    else {
        pont = 1;
    }
 
